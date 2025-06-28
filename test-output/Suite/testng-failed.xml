@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="tests" name="FirefoxBrowser(failed)">
+    <parameter name="browsers" value="firefox"/>
+    <classes>
+      <class name="HRMOrange.testExecution.TestCase_02">
+        <methods>
+          <include name="LaunchBrowser"/>
+          <include name="verify_title"/>
+          <include name="accessApplication"/>
+          <include name="logoutApplication"/>
+          <include name="CloseBrowser"/>
+        </methods>
+      </class> <!-- HRMOrange.testExecution.TestCase_02 -->
+    </classes>
+  </test> <!-- FirefoxBrowser(failed) -->
+</suite> <!-- Failed suite [Suite] -->
